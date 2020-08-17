@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>file-drop</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <div id="drop-area">
+        <form class="my-form" enctype="multipart/form-data">
+          <p>
+            You can drag an drop multiple files onto this area to upload them.
+          </p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label for="fileElem" class="button">
+            Select some files
+          </label>
+          <div id="gallery"></div>
+        </form>
+      </div>
+      <p id="formError"></p>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
