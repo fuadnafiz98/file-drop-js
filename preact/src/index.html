@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Rollup</title>
+    <link rel = "shortcut icon" href = "./assets/favicon.ico" type = "image/x-icon">
+    <link rel="preload" href = "./assets/fonts/font.ttf" as = "fonts">
+  </head>
+  <body>
+    <script>
+  function shimport(src) {
+    try {
+      new Function('import("' + src + '")')();
+    } catch (e) {
+      var s = document.createElement('script');
+      s.src = 'https://unpkg.com/shimport';
+      s.dataset.main = src;
+      document.head.appendChild(s);
+    }
+  }
+  // Load 'js/app.js' via built-in import(), falling back to shimport if needed:
+  shimport('./index.js');
+</script>
+  </body>
+</html>

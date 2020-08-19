@@ -1,0 +1,1 @@
+import{s as o,v as r}from"./index-465e4f01.js";o(".file_drop{height:100px;width:100px;background-color:brown}");export default function(){return r("div",{class:"file_drop"},r("h2",null,"File dropping"))}

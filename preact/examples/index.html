@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link href="https://uwnpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="tailwind.css">
+  <link href="./tailwind.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
+  <style>
+    * {
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex flex-col items-center">
+    <div class="w-11/12 mt-2 border-solid border-2 border-gray-800 flex items-center">
+      <textarea name="tweet" id="tweet" cols="75" rows="3" class="border-solid border-gray-800 m-1"></textarea>
+      <button class="rounded-md border-solid border-2 border-blue-800 w-48 h-8 m-1">
+        <p>tweet</p>
+      </button>
+    </div>
+    <div class="m-2 w-11/12 border-solid border-2 border-red-800 posts">
+      <div class="m-1 border-solid border-2 border-gray-600 post">
+        <div class="flex flex-row body h-24 items-center">
+          <div class="flex-none img m-1 mb-4 w-12 h-12 border-2 border-gray-200  rounded-full">
+            <img src="./pharaoh.svg" alt="profile">
+          </div>
+          <div class="flex-grow message ml-2 mr-2 h-16 w-full border-2 border-gray-600">Message</div>
+        </div>
+        <div class="border-gray-600  flex items-stretch h-10">
+          <button class="rounded-md border-solid border-2 border-blue-800 w-full h-8 m-1">
+            <p>like</p>
+          </button>
+          <button class="rounded-md border-solid border-2 border-blue-800 w-full h-8 m-1">
+            <p>retweet</p>
+          </button>
+          <button class="rounded-md border-solid border-2 border-blue-800 w-full h-8 m-1">
+            <p>share</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
